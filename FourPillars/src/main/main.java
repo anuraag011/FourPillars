@@ -11,11 +11,13 @@ public class main {
 		window.setResizable(false);
 		window.setTitle("FourPillars");
 		
-		GamePanel gamepanel = new GamePanel();
-		window.add(gamepanel);
+		GamePanel gamePanel = new GamePanel();
+		window.add(gamePanel);
 		window.pack();
 		window.setLocationRelativeTo(null);
 		window.setVisible(true);
-	}
+		
+		gamePanel.startGameThread();
 
+}
 }
