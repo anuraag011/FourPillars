@@ -7,5 +7,6 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="My2Dgame"/>
+	<classpathentry kind="src" path="res"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
