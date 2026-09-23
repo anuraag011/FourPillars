@@ -20,7 +20,7 @@ public class TileManager {
 		tile = new Tile[10]; // we will create 10 types of tiles
 		mapTileNum = new int[gp.maxScreenCol][gp.maxScreenRow];
 		getTileImage();
-		loadMap();
+		loadMap("/maps/map01.txt");
 	}
 	
 	public void getTileImage() {
@@ -40,9 +40,9 @@ public class TileManager {
 			e.printStackTrace();
 		}
 	}
-	public void loadMap() {
+	public void loadMap(String filepath) {
 		try {
-			InputStream is = getClass().getResourceAsStream("/maps/map01.txt");
+			InputStream is = getClass().getResourceAsStream(filepath);
 			BufferedReader br = new BufferedReader(new InputStreamReader(is));
 			
 			int col = 0;
